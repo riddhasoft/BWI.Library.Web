@@ -8,5 +8,7 @@ namespace BWI.Library.Entities
 {
     public class StudentModel
     {
+        
+        public int Id { get; set; }
     }
 }

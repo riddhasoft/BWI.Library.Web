@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\BWI.Library.Entities\BWI.Library.Entities.csproj" />
+  </ItemGroup>
+
 </Project>
