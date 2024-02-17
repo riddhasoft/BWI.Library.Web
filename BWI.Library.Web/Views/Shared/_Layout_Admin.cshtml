@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>@ViewData["Title"] - Feb_Library</title>
+    <partial name="_Admin_Css"/>
+</head>
+<body>
+<header>
+    <!-- Page Wrapper -->
+        <div id="wrapper">
+    
+            <!-- Sidebar -->
+            <partial name="_Admin_Sidebar"/>
+            <!-- End of Sidebar -->
+    
+            <!-- Content Wrapper -->
+            <div id="content-wrapper" class="d-flex flex-column">
+    
+                <!-- Main Content -->
+                <div id="content">
+                    
+                    <!-- Topbar -->
+                    <partial name="_Admin_Topbar"/>
+                    <!-- End of Topbar -->
+
+                    <div class="text-center">
+                        <h1 class="display-4">Welcome</h1>
+                        <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+                    </div>
+
+                </div>
+                <!-- End of Main Content -->
+    
+                <partial name="_Admin_Footer"/>
+    
+            </div>
+            <!-- End of Content Wrapper -->
+        </div>
+    <!-- End of Page Wrapper -->
+</header>
+<div class="container">
+    <main role="main" class="pb-3">
+        @RenderBody()
+    </main>
+</div>
+
+
+<partial name="_Admin_Js"/>
+@await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
