@@ -1,4 +1,9 @@
+using BWI.Library.Repo;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddDbContext<MyDBContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("MyDbContext") ?? throw new InvalidOperationException("Connection string 'MyDbContext' not found.")));
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
