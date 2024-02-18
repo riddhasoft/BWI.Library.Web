@@ -8,5 +8,6 @@ namespace BWI.Library.Services
 {
     public interface IStudentService
     {
+
     }
 }

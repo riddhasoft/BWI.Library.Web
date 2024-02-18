@@ -1,14 +1,18 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net7.0</TargetFramework>
+
+    <TargetFramework>net6.0</TargetFramework>
+
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
+
 
   <ItemGroup>
     <ProjectReference Include="..\BWI.Library.Entities\BWI.Library.Entities.csproj" />
     <ProjectReference Include="..\BWI.Library.Repo\BWI.Library.Repo.csproj" />
   </ItemGroup>
+
 
 </Project>
