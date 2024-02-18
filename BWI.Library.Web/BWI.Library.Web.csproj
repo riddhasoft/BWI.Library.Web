@@ -11,6 +11,13 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.27">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\BWI.Library.Entities\BWI.Library.Entities.csproj" />
     <ProjectReference Include="..\BWI.Library.Repo\BWI.Library.Repo.csproj" />
     <ProjectReference Include="..\BWI.Library.Services\BWI.Library.Services.csproj" />
